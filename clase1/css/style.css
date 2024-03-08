@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    header{
+        background-color: rgba(210, 24, 24, 0.436);
+    }
+header nav ul {
+    display: flex;
+    
+}
+header nav ul  a li {
+    margin: 3px;
+    text-decoration: none;
+    list-style: none;
+}
+section h1{
+    text-align: center;
+}
+section div{
+    padding: 40px;
+}
+
+.redes{
+    background-color:rgba(210, 24, 24, 0.436);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redes a img{
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+}
