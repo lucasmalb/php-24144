@@ -1,29 +1,267 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; }
-
-    header{
-        background-color: rgba(210, 24, 24, 0.436);
+    box-sizing: border-box; 
+}
+body{
+    background-color: black;
+}
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 5px 5px 10px orange;
+        padding-inline: 40px;
+    }
+    header h1 a{
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+    header span {
+        color: orange;
     }
 header nav ul {
     display: flex;
     
 }
-header nav ul  a li {
-    margin: 3px;
+header nav ul  a {
+    margin: 20px;
     text-decoration: none;
     list-style: none;
-}
-section h1{
-    text-align: center;
-}
-section div{
-    padding: 40px;
+    color: orange;
 }
 
+header nav ul  a:hover{
+    color: white;
+}
+
+header nav ul button{
+    background-color: black;
+    width: 110px;
+    text-align: center;
+    border: none;
+}
+header nav ul button a:hover{
+    color: white;
+}
+i{
+    color: rgb(255, 195, 83);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+i:hover{
+    color: white;
+}
+
+/*----------------------------------------------------------main----------------------------------------------------------------*/
+
+.d1{
+    width: 100%;
+}
+.Destacado{
+    display: flex;
+    justify-content: center;
+   
+}
+.card-destacado {
+    border: 2px solid rgb(240, 231, 231);
+    width: 180px;
+    height: 220px;
+    border: none;
+    
+}
+.card-destacado img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-destacado .card-info1 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Fills the entire width of the card */
+    height: 100%; /* Fills the entire height of the card */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired background strength */
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .card-destacado:hover {
+    transform: scale(1.1); /* Apply hover effect (optional) */
+    opacity: 0.8; /* Slightly reduce card opacity */
+  }
+  
+  .card-destacado:hover .card-info {
+    opacity: 1; /* Fully show info on hover */
+  }
+
+.flex-card{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-block: 30px;
+}
+
+.card {
+    border: 2px solid rgb(240, 231, 231);
+    width: 150px;
+    height: 220px;
+    margin-inline: 15px;
+    border: none;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-info {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Fills the entire width of the card */
+    height: 100%; /* Fills the entire height of the card */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired background strength */
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Apply hover effect (optional) */
+    opacity: 0.8; /* Slightly reduce card opacity */
+  }
+  
+  .card:hover .card-info {
+    opacity: 1; /* Fully show info on hover */
+  }
+.card-info div header{
+    text-align: end;
+}
+.card-info div header:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.card-info div main{
+   
+    text-align: center;
+    margin-top: 124px;
+}
+
+.card-info div footer{
+    margin-block: 4px;
+
+}
+
+.card-info div footer div{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.card-info div footer div button{
+    background-color: rgba(255, 255, 0, 0.769);
+    border-radius: 20px;
+    color: black;
+    border: none;
+    padding-inline: 5px;
+}
+
+  
+section{
+    margin-block:30px ;
+}
+section h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.card-serie{
+    width: 195px;
+    height: 120px;
+    margin: 10px;
+}
+.card-serie img{
+    width: 190px;
+    height: 120px;
+}
+.card-info-serie {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Fills the entire width of the card */
+    height: 100%; /* Fills the entire height of the card */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired background strength */
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .card-serie:hover {
+    transform: scale(1.1); /* Apply hover effect (optional) */
+    opacity: 0.8; /* Slightly reduce card opacity */
+  }
+  
+  .card-serie:hover .card-info-serie {
+    opacity: 1; /* Fully show info on hover */
+  }
+.card-info-serie div header{
+    text-align: end;
+}
+.card-info-serie div header:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.card-info-serie div main{
+   
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card-info-serie div footer{
+    margin-block: 4px;
+
+}
+
+.card-info-serie div footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info-serie div footer div strong{
+    font-size: 13px;
+   
+}
+
+.card-info-serie div footer div strong span{
+    color: orange;
+    
+}
+
+
+
+
+
+/*----------------------------------------------------------Footer----------------------------------------------------------------*/
+
 .redes{
-    background-color:rgba(210, 24, 24, 0.436);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -31,8 +269,32 @@ section div{
 
 }
 
-.redes a img{
+.redes a i{
     width: 25px;
     height: 25px;
     margin: 3px;
+    color: white;
 }
+
+
+
+/*----------------------------------------------------------Contacto----------------------------------------------------------------*/
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .form{
+    border: 2px solid black;
+    border-color: 10px; 
+    width: 50%;
+}
+
+
+
+
+    
+   
