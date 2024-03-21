@@ -1,38 +1,42 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 body{
     background-color: black;
 }
-    header nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 5px 5px 10px orange;
-        padding-inline: 40px;
-    }
-    header h1 a{
-        color: white;
-        text-decoration: none;
-        list-style: none;
-    }
-    header span {
-        color: orange;
-    }
-header nav ul {
+
+header nav{
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 10px orange;
+    padding-inline: 40px;
 }
-header nav ul  a {
-    margin: 20px;
+
+header nav h1 a{   
+    color: white;
     text-decoration: none;
-    list-style: none;
+}
+
+header nav h1 a span{
     color: orange;
 }
 
-header nav ul  a:hover{
+header nav ul{
+    display:flex;
+    list-style: none;
+    margin: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: orange;
+    margin: 20px;
+}
+
+header nav ul li a:hover{
     color: white;
 }
 
@@ -42,26 +46,32 @@ header nav ul button{
     text-align: center;
     border: none;
 }
+
+header nav ul button a{
+    text-decoration: none;
+    color:orange;
+}
+
 header nav ul button a:hover{
     color: white;
 }
+
 i{
     color: rgb(255, 195, 83);
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin-inline: 10px;
     cursor: pointer;
-}
-i:hover{
-    color: white;
 }
 
 /*----------------------------------------------------------main----------------------------------------------------------------*/
 
-.d1{
-    width: 100%;
+main section h2{
+    color: white;
+    text-align: center;
+    margin-block: 20px;
 }
 .Destacado{
     display: flex;
@@ -74,57 +84,40 @@ i:hover{
     height: 220px;
     border: none;
     
+    
 }
 .card-destacado img{
     width: 100%;
     height: 100%;
 }
 
-.card-destacado .card-info1 {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%; /* Fills the entire width of the card */
-    height: 100%; /* Fills the entire height of the card */
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired background strength */
-    color: white;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease-in-out;
-    font-size: 16px;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .card-destacado:hover {
-    transform: scale(1.1); /* Apply hover effect (optional) */
-    opacity: 0.8; /* Slightly reduce card opacity */
-  }
-  
-  .card-destacado:hover .card-info {
-    opacity: 1; /* Fully show info on hover */
-  }
+hr{
+    color: orange;
+    margin-top: 60px;
+}
 
 .flex-card{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    margin-block: 30px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-block: 30px;
+ }
+ 
+ .card {
+     border: 2px solid rgb(240, 231, 231);
+     width: 150px;
+     height: 220px;
+     margin-inline: 15px;
+     border: none;
+     position: relative;
+ }
+ 
+ .card img{
+     width: 100%;
+     height: 100%;
+ }
 
-.card {
-    border: 2px solid rgb(240, 231, 231);
-    width: 150px;
-    height: 220px;
-    margin-inline: 15px;
-    border: none;
-}
-
-.card img{
-    width: 100%;
-    height: 100%;
-}
-
-.card-info {
+ .card-info {
     position: absolute; 
     top: 0;
     left: 0;
@@ -140,12 +133,14 @@ i:hover{
   }
   
   .card:hover {
-    transform: scale(1.1); /* Apply hover effect (optional) */
-    opacity: 0.8; /* Slightly reduce card opacity */
+    transform: scale(1.1); 
+    opacity: 0.8; 
   }
   
   .card:hover .card-info {
-    opacity: 1; /* Fully show info on hover */
+    opacity: 1; 
+    
+
   }
 .card-info div header{
     text-align: end;
@@ -163,36 +158,27 @@ i:hover{
 
 .card-info div footer{
     margin-block: 4px;
+    
 
 }
 
 .card-info div footer div{
     display: flex;
     justify-content: space-between;
-   
-    
+    width: 100%;
 }
 .card-info div footer div button{
     background-color: rgba(255, 255, 0, 0.769);
     border-radius: 20px;
-    color: black;
     border: none;
     padding-inline: 5px;
 }
 
-  
-section{
-    margin-block:30px ;
-}
-section h2{
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
 .card-serie{
-    width: 195px;
+    width: 200px;
     height: 120px;
     margin: 10px;
+    position: relative;
 }
 .card-serie img{
     width: 190px;
@@ -214,13 +200,14 @@ section h2{
   }
   
   .card-serie:hover {
-    transform: scale(1.1); /* Apply hover effect (optional) */
-    opacity: 0.8; /* Slightly reduce card opacity */
+    transform: scale(1.1); 
+    opacity: 0.8; 
   }
   
   .card-serie:hover .card-info-serie {
-    opacity: 1; /* Fully show info on hover */
+    opacity: 1; 
   }
+
 .card-info-serie div header{
     text-align: end;
 }
@@ -237,6 +224,7 @@ section h2{
 
 .card-info-serie div footer{
     margin-block: 4px;
+    
 
 }
 
@@ -256,27 +244,28 @@ section h2{
 }
 
 
-
-
-
 /*----------------------------------------------------------Footer----------------------------------------------------------------*/
+footer{
+    box-shadow: 0px 5px 35px white;
+}
 
-.redes{
+footer div{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+footer a {
+    text-decoration: none;
 }
 
-.redes a i{
+footer a i{
     width: 25px;
     height: 25px;
     margin: 3px;
     color: white;
+    
 }
-
-
 
 /*----------------------------------------------------------Contacto----------------------------------------------------------------*/
 
@@ -292,9 +281,3 @@ section h2{
     border-color: 10px; 
     width: 50%;
 }
-
-
-
-
-    
-   
