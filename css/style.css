@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: black;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,78 +16,85 @@ header nav{
     padding-inline: 40px;
 }
 
-header nav h1 a{   
+header nav h1 a {
     color: white;
     text-decoration: none;
 }
 
-header nav h1 a span{
+header nav h1 a span {
     color: orange;
 }
 
-header nav ul{
-    display:flex;
+header nav ul {
+    display: flex;
     list-style: none;
     margin: 20px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: orange;
     margin: 20px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: white;
 }
-header nav ul button a{
+
+header nav ul button a {
     text-decoration: none;
     list-style: none;
     color: orange;
 }
 
-header nav ul button a:hover{
+header nav ul button a:hover {
     color: white;
 }
 
 .btn-jif:active,
 .btn-jif:focus,
 .btn-jif:hover {
-  color: #b1995f !important;
-  background-color: #000 !important;
-  border-color: #000 !important;
-  box-shadow: 0 0 72px -17px rgba(0, 0, 0, 0.58);
-  
+    color: #b1995f !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+    box-shadow: 0 0 72px -17px rgba(0, 0, 0, 0.58);
+
 }
+
 .btn-jif {
-  font-weight: 600 !important;
-  color: #b1995f !important;
-  background-color: #000 !important;
-  border-color: #000 !important;
+    font-weight: 600 !important;
+    color: #b1995f !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
 }
+
 .btn-effect {
-  text-decoration: none;
-  border: 1px solid #9d8854;
-  position: relative;
-  overflow: hidden;
+    text-decoration: none;
+    border: 1px solid #9d8854;
+    position: relative;
+    overflow: hidden;
 }
+
 .btn-effect:hover {
-  box-shadow: 1px 1px 5px 5px #9d8854;
+    box-shadow: 1px 1px 5px 5px #9d8854;
 }
+
 .btn-effect:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent,rgba(255, 255, 255, 0.493), transparent);
-  transition: all 650ms;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.493), transparent);
+    transition: all 650ms;
 }
+
 .btn-effect:hover:before {
-  left: 100%;
+    left: 100%;
 }
-i{
+
+i {
     color: rgb(255, 195, 83);
     font-size: 17px;
     display: flex;
@@ -98,211 +106,282 @@ i{
 
 /*----------------------------------------------------------main----------------------------------------------------------------*/
 
-main section h2{
+main section h2 {
     color: white;
     text-align: center;
     margin-block: 20px;
 }
-.Destacado{
+
+.Destacado {
     display: flex;
     justify-content: center;
-   
+
 }
+
 .card-destacado {
     border: 2px solid rgb(240, 231, 231);
     width: 180px;
     height: 220px;
     border: none;
-    
-    
+
+
 }
-.card-destacado img{
+
+.card-destacado img {
     width: 100%;
     height: 100%;
 }
 
-hr{
-    color: orange;
+hr {
+    border: 1px solid orange;
     margin-top: 60px;
 }
 
-.flex-card{
+.flex-card {
     display: flex;
     justify-content: center;
     align-items: center;
-     margin-block: 30px;
- }
- 
- .card {
-     border: 2px solid rgb(240, 231, 231);
-     width: 150px;
-     height: 220px;
-     margin-inline: 15px;
-     border: none;
-     position: relative;
- }
- 
- .card img{
-     width: 100%;
-     height: 100%;
- }
+    margin-block: 30px;
+}
 
- .card-info {
-    position: absolute; 
+.card-serie {
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    position: relative;
+}
+
+.card-serie img {
+    width: 190px;
+    height: 120px;
+}
+
+.card-info-serie {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Fills the entire width of the card */
-    height: 100%; /* Fills the entire height of the card */
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired background strength */
+    width: 100%;
+    /* Fills the entire width of the card */
+    height: 100%;
+    /* Fills the entire height of the card */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Adjust opacity for desired background strength */
     color: white;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
+    /* Initially hidden */
     transition: opacity 0.3s ease-in-out;
     font-size: 16px;
     padding: 10px;
     text-align: left;
-  }
-  
-  .card:hover {
-    transform: scale(1.1); 
-    opacity: 0.8; 
-  }
-  
-  .card:hover .card-info {
-    opacity: 1; 
-    
+}
 
-  }
-.card-info div header{
+.card-serie:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.card-serie:hover .card-info-serie {
+    opacity: 1;
+}
+
+.card-info-serie div header {
     text-align: end;
 }
-.card-info div header:hover{
+
+.card-info-serie div header:hover {
     color: orange;
     text-decoration: underline;
 }
 
-.card-info div main{
+.card-info-serie div main {
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.card-info-serie div footer {
+    margin-block: 4px;
+
+
+
+}
+
+.card-info-serie div footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info-serie div footer div strong {
+    font-size: 13px;
+
+}
+
+.card-info-serie div footer div strong span {
+    color: orange;
+
+}
+
+.card {
+    border: 2px solid rgb(240, 231, 231);
+    width: 150px;
+    height: 220px;
+    margin-inline: 15px;
+    border: none;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Fills the entire width of the card */
+    height: 100%;
+    /* Fills the entire height of the card */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Adjust opacity for desired background strength */
+    color: white;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.card:hover .card-info {
+    opacity: 1;
+
+
+}
+
+.card-info div {
+    background-color: transparent !important;
+}
+
+.card-info div header {
+    text-align: end;
+}
+
+.card-info div header:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.card-info div main {
     text-align: center;
     margin-top: 124px;
 }
-.card-info div footer{
+
+.card-info div footer {
     margin-block: 4px;
+
 }
-.card-info div footer div{
+
+.card-info div footer div {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    box-shadow: 0px 5px 35px white;
 }
-.card-info div footer div button{
+
+.card-info div footer div button {
     background-color: rgba(255, 255, 0, 0.769);
     border-radius: 20px;
     border: none;
     padding-inline: 5px;
 }
 
-.card-serie{
-    width: 200px;
-    height: 120px;
-    margin: 10px;
-    position: relative;
-}
-.card-serie img{
-    width: 190px;
-    height: 120px;
-}
-.card-info-serie {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%; /* Fills the entire width of the card */
-    height: 100%; /* Fills the entire height of the card */
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired background strength */
-    color: white;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease-in-out;
-    font-size: 16px;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .card-serie:hover {
-    transform: scale(1.1); 
-    opacity: 0.8; 
-  }
-  
-  .card-serie:hover .card-info-serie {
-    opacity: 1; 
-  }
 
-.card-info-serie div header{
-    text-align: end;
-}
-.card-info-serie div header:hover{
-    color: orange;
-    text-decoration: underline;
-}
-
-.card-info-serie div main{
-   
-    text-align: center;
-    margin-top: 40px;
-}
-
-.card-info-serie div footer{
-    margin-block: 4px;
-    
-
-}
-
-.card-info-serie div footer div{
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-info-serie div footer div strong{
-    font-size: 13px;
-   
-}
-
-.card-info-serie div footer div strong span{
-    color: orange;
-    
-}
 
 
 /*----------------------------------------------------------Footer----------------------------------------------------------------*/
-.footer{
+.footer {
     box-shadow: 0px 5px 35px white;
 }
 
-.footer div{
+.footer div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .footer a {
     text-decoration: none;
 }
 
-.footer a i{
+.footer a i {
     width: 25px;
     height: 25px;
     margin: 3px;
     color: white;
-    
+
 }
+
+/*----------------------------------------------------------Pelicula----------------------------------------------------------------*/
+
+.card-pelicula {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+  }
+
+  .card-peli {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .card-peli img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-peli video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card-peli:hover video {
+    opacity: 1;
+  }
 
 /*----------------------------------------------------------Contacto----------------------------------------------------------------*/
 
 
-.formulario{
+.formulario {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.formulario .form{
+.formulario .form {
     border: 2px solid black;
-    border-color: 10px; 
+    border-color: 10px;
     width: 50%;
 }
