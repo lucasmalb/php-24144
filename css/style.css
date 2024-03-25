@@ -334,7 +334,7 @@ hr {
 
 .card-pelicula {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
@@ -343,8 +343,8 @@ hr {
 
   .card-peli {
     width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 2px solid #363535;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -352,7 +352,7 @@ hr {
 
   .card-peli img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
   }
 
@@ -370,6 +370,9 @@ hr {
   .card-peli:hover video {
     opacity: 1;
   }
+
+ 
+  
 
 /*----------------------------------------------------------Contacto----------------------------------------------------------------*/
 
