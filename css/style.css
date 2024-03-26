@@ -356,7 +356,7 @@ hr {
     display: block;
   }
 
-  .card-peli video {
+  .card-peli a video {
     position: absolute;
     top: 0;
     left: 0;
@@ -367,7 +367,7 @@ hr {
     transition: opacity 0.3s ease;
   }
 
-  .card-peli:hover video {
+  .card-peli:hover a video {
     opacity: 1;
   }
 
