@@ -141,7 +141,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 30px;
+    margin-block:30px;
 }
 
 .card-serie {
@@ -161,14 +161,14 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    /* Fills the entire width of the card */
+
     height: 100%;
-    /* Fills the entire height of the card */
+   
     background-color: rgba(0, 0, 0, 0.7);
-    /* Adjust opacity for desired background strength */
+  
     color: white;
     opacity: 0;
-    /* Initially hidden */
+   
     transition: opacity 0.3s ease-in-out;
     font-size: 16px;
     padding: 10px;
@@ -241,14 +241,14 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    /* Fills the entire width of the card */
+   
     height: 100%;
-    /* Fills the entire height of the card */
+   
     background-color: rgba(0, 0, 0, 0.7);
-    /* Adjust opacity for desired background strength */
+    
     color: white;
     opacity: 0;
-    /* Initially hidden */
+    
     transition: opacity 0.3s ease-in-out;
     font-size: 16px;
     padding: 10px;
@@ -371,7 +371,19 @@ hr {
     opacity: 1;
   }
 
- 
+  .contenedor-categorias{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+  }
+  .card-categoria{
+    width: 150px;
+    height: 220px;
+    border:2px solid white;
+    border-radius: 15px;
+    
+  }
   
 
 /*----------------------------------------------------------Contacto----------------------------------------------------------------*/
